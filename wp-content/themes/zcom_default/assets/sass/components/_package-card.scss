@@ -1,0 +1,54 @@
+.package-card {
+  &__img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+	}
+
+	&__details {
+		padding: 0 35px;
+		
+		p {
+			margin-top: 10px;
+		}
+	}
+}
+
+.top {
+  &__title {
+    margin-bottom: 90px;  
+  }
+
+  &__img {
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+  }
+
+  &__details {
+    margin: 20px 0 40px;
+
+    p {
+      font-size: 1.3rem;
+      line-height: 1;
+    }
+  }
+
+  &__description {
+    width: 100px;
+    padding: 0 10px;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  @include respond(tab-port) {
+    &__title {
+      margin-bottom: 50px;
+    }
+    
+    &__details {
+      margin: 20px 0;
+    }
+  }
+}

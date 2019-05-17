@@ -1,0 +1,123 @@
+.section-contact-top {
+  text-align: center;
+  background:-webkit-gradient(linear, right top, left top, color-stop(50%, $color-white), color-stop(50%, #f6f6f6));
+  background:linear-gradient(to left, $color-white 50%, #f6f6f6 50%);
+
+  .contact {
+    margin: 52px 0 32px;    
+    &__info{
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      @include respond(tab-port){
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+      }
+    }
+  }
+  .social-icon{
+    i{
+    color: #7b7b7b; 
+    font-size: 20px;
+
+    }
+  }
+  .contact-details {
+    padding: 170px 0;
+    text-align: left;
+    padding-left: 82px;
+
+    .customized-margin {
+      margin-bottom: 80px;
+      font-size: 20px;
+    }
+    .heading-fourth{
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+    .col-1-of-2{
+      float: none;
+    }
+    @include respond(big-desktop){
+      padding: 235px 0;
+      .col-1-of-2{
+        float: left;
+      }
+    }
+  }
+
+  .heading-fourth {
+    color: $color-secondary;
+  }
+
+  @include respond(tab-port) {
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(68%, white), color-stop(32%, #f6f6f6));
+    background: linear-gradient(to top, white 68%, #f6f6f6 32%);
+
+    .row [class^=col-]:not(:last-child){
+      margin-bottom: 3rem;
+    }
+
+    .contact-details {
+      font-size: 1.7rem;
+      margin: 35px 0;
+      text-align: center;
+      padding: 0;
+
+      h4.heading-fourth {
+        font-size: 2rem;
+      }
+
+      .customized-margin {
+        margin-bottom: 30px;
+      }
+    }
+
+    .contact {
+      margin: 0 0 50px;
+
+      & .heading-secondary {
+        padding-top: 50px;          
+      }
+    }
+
+    .contact-form {
+      input {
+        width: 100%;
+        margin:0 0 15px;
+
+        &.name {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
+
+.section-contact-bottom {
+  padding: 86px 0 123px;
+  color: $color-white;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url('../images/contact/contact-bg.jpg');
+    @include respond(tab-port){
+      padding: 70px 0;
+    }
+  .contact-text {
+    padding: 84px 0;
+    font-size: 1.4rem;
+    text-align: center;
+
+    .heading-secondary {
+      color: $color-white;
+      font-size: 3.333rem;
+    }
+    p{
+      font-size: 2.667rem;
+      line-height: 1;
+    }
+  }
+}

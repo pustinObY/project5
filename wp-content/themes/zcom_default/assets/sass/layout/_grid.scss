@@ -1,0 +1,26 @@
+@import '../../../../../common/assets/sass/layout/grid';
+
+section {
+	@include respond(tab-port) {
+		.row {
+			padding: 0 20px;
+		}
+	}
+	@include respond(big-desktop){
+		.row{
+			max-width: 133.333rem;
+		}
+		.row-small{
+			max-width: 116.333rem;
+		}
+	}
+}
+@include respond(big-desktop){
+	.row-small{
+		max-width: 116.333rem;
+	}
+	.row{
+		max-width: 133.333rem;
+	}
+	
+}

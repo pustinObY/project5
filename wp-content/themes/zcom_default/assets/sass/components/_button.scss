@@ -1,0 +1,24 @@
+
+.btn {
+  color: #fff;
+  border: 0;
+  font-weight: 700;
+  padding: 22px 106px;
+  // border-radius: 170px;
+  text-transform: uppercase;
+  display: inline-block;
+  font-size: 18px;
+  
+  &--transparent {
+    border: 1px solid white;
+    background-color: rgba(0,0,0,0);
+  }
+
+  &--yellow {
+    background-color:$color-primary;
+  }
+}
+
+.btn:hover {
+  color: $color-white;
+}

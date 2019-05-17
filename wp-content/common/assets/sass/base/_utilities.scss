@@ -1,0 +1,30 @@
+.u-text-break-all {word-break: break-all !important;}
+.u-text-center {text-align: center !important;}
+.u-text-left {text-align: left !important;}
+.u-text-right {text-align: right !important;}
+.u-text-uppercase {text-transform: uppercase !important;}
+.u-text-white {color: white !important;}
+
+.u-left {float: left !important;}
+.u-right {float: right !important;}
+.u-vertical-middle {vertical-align: middle !important;}
+.u-block {display: block !important;}
+.u-inline-block {display: inline-block !important;}
+
+$index: 0; @while $index <= 100 {
+  // Margin
+  .u-margin-top-#{$index}     { margin-top: $index+px !important; }
+  .u-margin-right-#{$index}   { margin-right: $index+px !important; }
+  .u-margin-bottom-#{$index}  { margin-bottom: $index+px !important; }
+  .u-margin-left-#{$index}    { margin-left: $index+px !important; }
+  .u-margin-#{$index}         { padding: $index+px !important; }
+
+  // Padding
+  .u-padding-top-#{$index}    { padding-top: $index+px !important; }
+  .u-padding-right-#{$index}  { padding-right: $index+px !important; }
+  .u-padding-bottom-#{$index} { padding-bottom: $index+px !important; }
+  .u-padding-left-#{$index}   { padding-left: $index+px !important; }
+  .u-padding-#{$index}        { padding: $index+px !important; }
+
+  $index: $index + 1;
+}

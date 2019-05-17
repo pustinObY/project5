@@ -1,0 +1,58 @@
+
+.contact-form {
+	margin-top: 54px;
+	@include respond(big-desktop){
+		padding-left:123px;
+	}
+	@include respond(tab-port){
+		margin-top: 30px;
+	}
+
+	
+
+	input.name,
+	input.email,
+	input.subject,
+	textarea.message {
+		font-size: 18px;
+
+		padding: 18px 22px;
+		border-radius: 5px;
+		border: 1px solid #ccc;
+		
+		&.error {
+			border-color:rgba(255,0,0, .5);
+		}
+	}
+
+	input.name,
+	input.email {
+		width:50%;
+	}
+
+	input.name {
+		margin-right: 14px;
+	}
+
+	input.subject {
+		width: 100%;
+		margin: 22px 0;
+	}
+
+	textarea.message {
+		width: 100%;
+		margin-bottom: 46px;
+	}
+
+	.btn--yellow {
+		padding: 24px 136px;
+		border-radius: 34px;
+		max-width: 100%;
+	}
+}
+@media (min-width: 992px) and (max-width: 1799.98px) { 
+	.contact-form {
+		padding-left: 75px;
+	}
+ }
+ 

@@ -1,0 +1,48 @@
+@import '../../../../../common/assets/sass/base/typography';
+
+/*
+400 - Regular
+400 - Regular Italic
+600 - Semi-Bold
+600 - Semi-Bold Italic
+700 - Bold
+700 - Bold Italic
+*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i');
+
+body {
+  font-size: $default-font-size;
+  color: $color-secondary-light;
+  font-weight: 400;  
+  font-family: "Poppins";
+}
+
+.heading-primary {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.heading-secondary {
+  font-size: 2.667rem;
+  font-weight: 700;
+  color: $color-secondary;
+
+  &.white {
+    color: $color-white !important;
+  }
+}
+
+.heading-tertiary {
+  color: $color-white;
+  font-weight: 700;
+  font-size: 2.083rem;
+
+}
+
+.heading-fourth {
+  color: $color-white;
+  font-weight: 700;
+  font-size: 2.083rem;
+  font-family: "Poppins"
+
+}

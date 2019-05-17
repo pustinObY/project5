@@ -1,0 +1,62 @@
+.section-top {
+  margin: 50px 0;
+  text-align: center;
+
+  .col-1-of-3 {
+    position: relative;
+  }
+
+  .divider {
+    top: 25%;
+    right: -10%;
+    width: 1px;
+    height: 75%;
+    position: absolute; 
+    background-color: $color-secondary-light;
+  }
+
+  .heading-tertiary {
+    color: $color-secondary;
+  }
+
+  .btn {
+    margin:80px 0 0;
+  }
+
+  @include respond(tab-port) {
+    .btn {
+      margin-top: 50px;
+    }
+
+    .top__description {
+      width: auto;
+    }
+
+    .divider {
+      display: none;
+    }
+  }
+}
+
+.section-packages {
+  .discount-text {
+    margin: 50px 0;
+    font-size: 1.4rem;
+    text-align: center;
+  }
+}
+
+
+.section-packages {
+  padding: 50px 0;
+  text-align: left;
+  color: $color-white;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url('../images/packages/packages-bg.jpg');
+  margin-top: 130px;
+  @include respond(tab-port){
+    margin-top: unset;
+  }
+}

@@ -1,0 +1,85 @@
+.section-circle {
+  width: 100%;
+	margin: 50px 0; 
+	text-align: center;
+  display: inline-block;
+
+	.circle__title {
+    margin-bottom: 50px;
+	}
+
+	.heading-fourth {
+		color: $color-secondary;
+  }
+  
+  @include respond(tab-port) {
+    margin: 50px 0 0;
+  }
+}
+
+.section-images {
+  margin: 50px 0;
+  
+  .col-1-of-3 {
+    width: calc((100% - 2 * 2rem) / 3);
+  }
+ 
+  .row .col-2-of-3 {
+    width: calc(2 * ((100% - 2 * 2rem) / 3) + 2rem);
+  }
+
+  .row [class^=col-]:not(:last-child) {
+    margin-right: 2rem;
+  }
+  
+  .row [class^=col-] {
+    margin-bottom: 1.5rem;
+  }
+
+  .first-img,
+  .second-img {
+    width: 100%;
+    height: 260px;
+  }
+
+  .square-text {
+		color: #fff;
+		width: 100%;
+    height: 260px;
+    padding: 30px;
+    border-radius: 10px;
+		background-color: $color-primary;
+		
+		.heading-fourth {
+			margin-bottom: 15px;
+			padding-right: 60px;
+		}
+  }
+  
+  @include respond(tab-port) {
+    
+    .row .col-1-of-3 {
+      margin-bottom: 0;
+    }  
+
+    .second-img--hide {
+      display: none;
+    }
+
+    .first-img,
+    .second-img {
+      height: 200px;
+    }
+  
+    .square-text {
+      display: table-cell;
+      vertical-align: middle;
+      text-align: center;
+      height: 200px;
+
+      .heading-fourth {
+        padding-right: 0 !important;
+      }
+    }
+  }
+}
